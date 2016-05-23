@@ -1,0 +1,5 @@
+#One month Rails
+
+This is the [interesting sample for [*One Month Rails*](http://onemonthrails.com)
+
+By [Jessica]
