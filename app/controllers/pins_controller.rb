@@ -25,18 +25,17 @@ class PinsController < ApplicationController
   end
 
   def update
-      if @pin.update(pin_params)
-        redirect_to @pin, notice: 'Pin was successfully updated.'
-      else
-        render :edit
-      end
+    if @pin.update(pin_params)
+      redirect_to @pin, notice: 'Pin was successfully updated.'
+    else
+      render :edit
     end
   end
 
   def destroy
     @pin.destroy
-       redirect_to pins_url, notice: 'Pin was successfully destroyed.'
-       head :no_content
+      redirect_to pins_url, notice: 'Pin was successfully destroyed.'
+      head :no_content
     end
   end
 
