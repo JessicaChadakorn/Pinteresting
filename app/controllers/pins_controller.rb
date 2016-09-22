@@ -34,9 +34,8 @@ class PinsController < ApplicationController
 
   def destroy
     @pin.destroy
-      redirect_to pins_url, notice: 'Pin was successfully destroyed.'
-      head :no_content
-    end
+    redirect_to pins_url, notice: 'Pin was successfully destroyed.'
+    head :no_content
   end
 
   private
