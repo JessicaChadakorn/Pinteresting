@@ -4,9 +4,9 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
+  # associations
   has_many :pins
 
+  # validations
   validates :name, presence: true
-  validates :image, presence: true
-  validates :description, presence: true
 end
